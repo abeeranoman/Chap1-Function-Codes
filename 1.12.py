@@ -4,7 +4,11 @@
 # range. Using only the randrange function, implement your own version of the choice function
 import random
 def getnumber(data):
-    index = random.randrange(len(data)) #(len(data)) for a random length number that further identifies an index
-    return data[index]
-print (getnumber((2,5,4,7,9,0)))
-#randrange gives 1 random out of the liat whereas range gives us a list till n-1.
+    index = random.randrange(len(data))
+    result = data[index]
+    return result
+
+num = (9, 7, 3, 3, 5, 4)
+print (getnumber(num))
+
+'''Key difference between range and randrange is that randrange gives us 1 random (they both follow the m till n-1 rule)'''
