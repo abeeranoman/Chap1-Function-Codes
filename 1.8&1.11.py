@@ -11,11 +11,11 @@ class IndicesConverter:
 
     def converter(self):
         n = len(self.s)
-        if -n < self.k <0:
+        if -n < self.k <= 0:
             j = n + self.k
             return j
 
-        elif  0 < self.k < n:
+        elif  0 <= self.k < n:
             return self.k
         
         else: 
